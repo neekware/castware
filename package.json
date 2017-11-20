@@ -1,0 +1,35 @@
+{
+  "name": "castware",
+  "version": "0.0.1",
+  "description": "A simple Javascript broadcast browser library for inner-tab communication",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec",
+    "debug": "mocha debug --inspect-brk --reporter spec",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neekware/castware.git"
+  },
+  "keywords": [],
+  "author": "Val Neekman <info@neekware.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neekware/castware/issues"
+  },
+  "homepage": "https://github.com/neekware/castware#README.md",
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "jsdom": "^11.4.0",
+    "mocha": "^4.0.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  }
+}
